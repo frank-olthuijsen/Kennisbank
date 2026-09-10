@@ -1,0 +1,32 @@
+- Het $\square$ symbool wordt gebruikt om een afgerond bewijs weer te geven. 
+- Reeds bewezen:
+	- **Stelling**: een belangrijke bewering die wiskundig bewezen kan worden op basis van eerder geaccepteerde waarheden, zoals axioma's, definities en andere reeds bewezen stellingen.
+		- Engels: **theorem**.
+	- **Uitspraak** (of propositiestelling): een bewering die waar of onwaar kan zijn, en die bewezen kan worden, maar die doorgaans als minder fundamenteel of minder belangrijk wordt beschouwd dan een stelling.
+		- Engels: **proposition**.
+		- Een uitspraak met daarin "er bestaat" kan worden bewezen door slechts één voorbeeld te geven dat aan deze bewering voldoet.
+	- **Hulpstelling**: een bewering die bewezen wordt, maar die primair dient als stap of gereedschap om een grotere, belangrijkere uitspraak of stelling te bewijzen.
+		- Engels: **lemma**.
+	- **Gevolgstelling** (of gevolg): een stelling die direct en vrijwel zonder extra bewijs volgt uit een reeds bewezen stelling of uitspraak.
+		- Engels: **corollary**.
+- Nog te bewijzen:
+	- **Vermoeden** (of gissing): een bewering die men vermoedt dat waar is, maar waarvoor nog **geen** bewijs is gevonden.
+		- Engels: conjecture.
+- **Tegenvoorbeeld**: een specifiek geval dat aantoont dat een algemene bewering, hypothese of vermoeden **onwaar** is.
+	- Engels: counterexample.
+- Pigeonhole principle:
+	- Stelling: Als n+1 objecten (duiven) worden verdeeld over n verzamelingen (duivenhokken) dan bestaat er ten minste één verzameling die meer dan één object bevat.
+
+## Algemeen
+- **Relatief priem**: twee gehele getallen die geen positief geheel getal groter dan 1 gemeen hebben dat beide getallen deelt. 
+	- Ook wel; **copriem**
+	- Om te bepalen of twee getallen relatief priem zijn, berekent men gewoonlijk hun [[1. Ggd en kgv|ggd]] . 
+		- Twee getallen $a$ en $b$ zijn precies dan relatief priem, wanneer hun $ggd(a,b)=1$
+	- Bijvoorbeeld:
+		- $6 = 3 \times 2 \times 1$
+		- $25 = 5 \times 5 \times 1$
+		- $ggd(6, 25) =1$
+	- Alle twee opeenvolgende gehele getallen n en (n+1) zijn altijd relatief priem. 
+		- Dit is omdat elke gemeenschappelijk deler van opeenvolgende gehele getallen ook hun verschil zou delen: (n+1) - n = 1. 
+		- Omdat alleen 1 het getal 1 deelt, moet hun GGD gelijk zijn aan 1. 
+		- Deze eigenschap maakt opeenvolgende gehele getallen uiterst nuttig in diverse wiskundige bewijzen en toepassingen.
