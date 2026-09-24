@@ -6,7 +6,7 @@ This checklist can guide you through your [[1. Machine learning|Machine Learning
 2. Get the data.    
 3. Explore the data to gain insights.    
 4. Prepare the data to better expose the underlying data patterns to Machine Learning algorithms.    
-5. Explore many different [[1. Model en training algorithm#Model|models]] and short-list the best ones.    
+5. Explore many different [[1. Model#Model|models]] and short-list the best ones.    
 6. Fine-tune your models and combine them into a great solution.    
 7. Present your solution.    
 8. Launch, monitor, and maintain your system.    
@@ -86,7 +86,7 @@ Notes:
 # Short-list promising models
 
 Notes:
-- If the data is huge, you may want to sample smaller [[1. Training, validation en test set#Training set|training sets]] so you can [[3. Training|train]] many different models in a reasonable time (be aware that this penalizes complex models such as large neural nets or Random Forests).    
+- If the data is huge, you may want to sample smaller [[1. Training, validation en test set#Training set|training sets]] so you can [[1. Training|train]] many different models in a reasonable time (be aware that this penalizes complex models such as large neural nets or Random Forests).    
 - Once again, try to automate these steps as much as possible.    
 
 1. Train many quick and dirty models from different categories (e.g., linear, naive, Bayes, SVM, Random Forests, neural net, etc.) using standard [[2. Parameters en hyperparameters#Parameters|parameters]].    
@@ -106,7 +106,7 @@ Notes:
 
 1. Fine-tune the [[2. Parameters en hyperparameters#Hyperparameters|hyperparameters]] using [[3. Cross-validation|cross-validation]].    
     - Treat your data transformation choices as hyperparameters, especially when you are not sure about them (e.g., should I replace missing values with zero or the median value? Or just drop the rows?).       
-    - Unless there are very few hyperparameter values to explore, prefer random search over grid search. If [[3. Training|training]] is very long, you may prefer a Bayesian optimization approach (e.g., using a Gaussian process priors, as described by Jasper Snoek, Hugo Larochelle, and Ryan Adams ([https://goo.gl/PEFfGr](https://goo.gl/PEFfGr)))        
+    - Unless there are very few hyperparameter values to explore, prefer random search over grid search. If [[1. Training|training]] is very long, you may prefer a Bayesian optimization approach (e.g., using a Gaussian process priors, as described by Jasper Snoek, Hugo Larochelle, and Ryan Adams ([https://goo.gl/PEFfGr](https://goo.gl/PEFfGr)))        
 2. Try Ensemble methods. Combining your best models will often perform better than running them individually.    
 3. Once you are confident about your final model, measure its performance on the [[1. Training, validation en test set#Test set|test set]] to estimate the [[1. Training, validation en test set#Generalization error|generalization error]].    
 
