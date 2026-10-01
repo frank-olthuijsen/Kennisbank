@@ -17,7 +17,7 @@ Obviously, you should feel free to adapt this checklist to your needs.
 1. Define the objective in business terms.    
 2. How will your solution be used?    
 3. What are the current solutions/workarounds (if any)?    
-4. How should you frame this problem ([[1. Supervised learning|supervised]]/[[2. Unsupervised learning|unsupervised]], [[1. Batch en online learning#Online learning|online]]/[[1. Batch en online learning#Batch learning|offline]], etc.)    
+4. How should you frame this problem ([[1. Supervised learning|supervised]]/[[2. Unsupervised learning|unsupervised]], [[1. Batch, offline en online learning#Online learning|online]]/[[1. Batch, offline en online learning#Batch learning|offline]], etc.)    
 5. How should performance be measured?    
 6. Is the performance measure aligned with the business objective?    
 7. What would be the minimum performance needed to reach the business objective?    
@@ -127,5 +127,5 @@ Notes:
 2. Write monitoring code to check your system's live performance at regular intervals and trigger alerts when it drops.    
     - Beware of slow degradation too: models tend to "[[2. Model degradation#Model rot|rot]]" as data evolves.        
     - Measuring performance may require a human pipeline (e.g., via a crowdsourcing service).        
-    - Also monitor your inputs' quality (e.g., a malfunctioning sensor sending random values, or another team's output becoming stale). This is particularly important for [[1. Batch en online learning#Online learning|online learning]] systems.        
+    - Also monitor your inputs' quality (e.g., a malfunctioning sensor sending random values, or another team's output becoming stale). This is particularly important for [[1. Batch, offline en online learning#Online learning|online learning]] systems.        
 3. Retrain your models on a regular basis on fresh data (automate as much as possible).
