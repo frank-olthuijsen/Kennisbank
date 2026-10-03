@@ -56,7 +56,8 @@ Note: try to get insights from a field expert for these steps.
     - Type of distribution (Gaussian, uniform, logarithmic, etc.)        
 4. For [[1. Supervised learning|supervised learning]] tasks, identify the [[2. Feature, label en target|target]] attribute(s).    
 5. Visualize the data.    
-6. Study the correlations between attributes.    
+6. Study the correlations between attributes.
+	1. [[5. Correlatiematrix#Correlatiematrix|Correlationmatrix]]
 7. Study how you would solve the problem manually.    
 8. Identify the promising transformations you may want to apply.    
 9. Identify extra data that would be useful (go back to "Get the Data" on page 502).    
@@ -74,15 +75,15 @@ Notes:
 
 1. Data cleaning:    
     - Fix or remove outliers (optional).        
-    - Fill in missing values (e.g., with zero, mean, median...) or drop their rows (or columns).        
-2. [[1. Feature engineering|Feature selection]] (optional):    
+    - [[4. Imputation#Imputation|Fill in missing values]] (e.g., with zero, mean, median...) or drop their rows (or columns).        
+2. [[1. Feature engineering#Feature selection|Feature selection]] (optional):    
     - Drop the attributes that provide no useful information for the task.        
-3. [[1. Feature engineering|Feature engineering]], where appropriate:    
+3. [[1. Feature engineering#Feature engineering|Feature engineering]], where appropriate:    
     - Discretize continuous features.        
     - Decompose features (e.g., categorical, date/time, etc.).        
     - Add promising transformations of features (e.g., $\log(x)$, $\sqrt{x}$, $x^2$, etc.).        
     - Aggregate features into promising new features.        
-4. Feature scaling: standardize or normalize features.    
+4. [[4. Feature scaling#Feature scaling|Feature scaling]]: standardize or normalize features.    
 # Short-list promising models
 
 Notes:
@@ -107,7 +108,7 @@ Notes:
 1. Fine-tune the [[2. Parameters en hyperparameters#Hyperparameters|hyperparameters]] using [[3. Cross-validation|cross-validation]].    
     - Treat your data transformation choices as hyperparameters, especially when you are not sure about them (e.g., should I replace missing values with zero or the median value? Or just drop the rows?).       
     - Unless there are very few hyperparameter values to explore, prefer random search over grid search. If [[1. Training|training]] is very long, you may prefer a Bayesian optimization approach (e.g., using a Gaussian process priors, as described by Jasper Snoek, Hugo Larochelle, and Ryan Adams ([https://goo.gl/PEFfGr](https://goo.gl/PEFfGr)))        
-2. Try Ensemble methods. Combining your best models will often perform better than running them individually.    
+2. Try [[1. Ensemble#Ensemble|Ensemble]] methods. Combining your best models will often perform better than running them individually.    
 3. Once you are confident about your final model, measure its performance on the [[1. Training, validation en test set#Test set|test set]] to estimate the [[1. Training, validation en test set#Generalization error|generalization error]].    
 
 > Don't tweak your model after measuring the generalization error: you would just start [[1. Overfitting en underfitting#Overfitting|overfitting]] the test set.
