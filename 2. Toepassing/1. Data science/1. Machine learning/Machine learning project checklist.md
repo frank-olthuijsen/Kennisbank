@@ -18,7 +18,8 @@ Obviously, you should feel free to adapt this checklist to your needs.
 2. How will your solution be used?    
 3. What are the current solutions/workarounds (if any)?    
 4. How should you frame this problem ([[1. Supervised learning|supervised]]/[[2. Unsupervised learning|unsupervised]], [[1. Batch, offline en online learning#Online learning|online]]/[[1. Batch, offline en online learning#Batch learning|offline]], etc.)    
-5. How should performance be measured?    
+5. How should performance be measured?
+	1. [[1. Prediction error|Regression metrics]]	
 6. Is the performance measure aligned with the business objective?    
 7. What would be the minimum performance needed to reach the business objective?    
 8. What are comparable problems? Can you reuse experience or tools?    
@@ -40,7 +41,7 @@ Note: automate as much as possible so you can easily get fresh data.
 8. Convert the data to a format you can easily manipulate (without changing the data itself).    
 9. Ensure sensitive information is deleted or protected (e.g., anonymized).    
 10. Check the size and type of data (time series, sample, geographical, etc.).    
-11. Sample a [[1. Training, validation en test set#Test set|test set]], put it aside, and never look at it (no data snooping!).    
+11. Sample a [[1. Training, validation en test set#Test set|test set]], put it aside, and never look at it (no [[1. Training, validation en test set#Data snooping bias|data snooping]]!).
 # Explore the data
 
 Note: try to get insights from a field expert for these steps.
